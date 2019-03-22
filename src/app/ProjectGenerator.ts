@@ -2,7 +2,7 @@
 import { BaseGenerator, GeneratorOptions, InputQuestion, InquirerQuestionType, Question, StoreQuestion } from 'dotup-typescript-yeoman-generators';
 import inquirer = require('inquirer');
 import validateNpmPackageNameTyped from 'validate-npm-package-name-typed';
-import { GitGenerator, GitQuestions } from '../git/GitGenerator';
+import { GitQuestions } from 'generator-dotup-git'; // '../git/GitGenerator';
 import { TypescriptAppGenerator } from '../ts-app/TypescriptAppGenerator';
 import { TypescriptLibGenerator } from '../ts-lib/TypescriptLibGenerator';
 import { YeomanGeneratorGenerator } from '../ts-yogen/YeomanGeneratorGenerator';
@@ -145,14 +145,15 @@ export class ProjectGenerator extends BaseGenerator<ProjectQuestions> {
 
     if (this.answers.useGit) {
 
-      const args = {
-        Generator: (<any>GitGenerator),
-        path: require.resolve('../git/index')
-      };
+      // const args = {
+      //   Generator: (<any>GitGenerator),
+      //   path: require.resolve('../git/index')
+      // };
 
       // Load git generator
       this.composeWith(
-        <any>args,
+        // <any>args,
+        require.resolve('generator-dotup-git/generators/app'),
         {
           [GitQuestions.rootPath]: this.destinationPath(),
           [GitQuestions.repositoryName]: this.answers.projectName,
@@ -239,7 +240,7 @@ export class ProjectGenerator extends BaseGenerator<ProjectQuestions> {
   }
 
   async end(): Promise<void> {
-    this.logGreen('Your project is ready soon.');
+    this.logGreen('Your project is ready.');
 
     const q = {
       name: 'vscode',

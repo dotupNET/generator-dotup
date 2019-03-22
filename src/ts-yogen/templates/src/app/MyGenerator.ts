@@ -17,6 +17,7 @@ export class MyGenerator extends BaseGenerator<MyGeneratorQuestions> {
   }
 
   async initializing(): Promise<void> {
+    if (this.skipGenerator) { return; }
 
     // Your name
     this.addQuestion(
@@ -35,10 +36,14 @@ export class MyGenerator extends BaseGenerator<MyGeneratorQuestions> {
   }
 
   async prompting(): Promise<void> {
+    if (this.skipGenerator) { return; }
+
     await super.prompting();
   }
 
   async configuring(): Promise<void> {
+    if (this.skipGenerator) { return; }
+
     if (this.answers.niceDay) {
       this.logGreen(`Okay ${this.answers.yourName}. Nice day.`);
     } else {
@@ -47,9 +52,11 @@ export class MyGenerator extends BaseGenerator<MyGeneratorQuestions> {
   }
 
   async install(): Promise<void> {
+    if (this.skipGenerator) { return; }
   }
 
   async end(): Promise<void> {
+    if (this.skipGenerator) { return; }
   }
 
 }

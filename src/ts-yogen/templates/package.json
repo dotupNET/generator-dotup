@@ -13,7 +13,8 @@
   "devDependencies": {
     "@types/yeoman-generator": "2.0.3",
     "yeoman-test": "^1.9.1",
-    "yeoman-assert": "^3.1.1"
+    "yeoman-assert": "^3.1.1",
+    "cross-spawn": "^6.0.5"
   },
   "jest": {
     "testPathIgnorePatterns": [
