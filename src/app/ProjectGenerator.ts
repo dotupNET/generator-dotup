@@ -150,8 +150,6 @@ export class ProjectGenerator extends BaseGenerator<ProjectQuestions> {
       //   path: require.resolve('../git/index')
       // };
 
-      console.log(GitQuestions.rootPath);
-
       // Load git generator
       this.composeWith(
         // <any>args,
