@@ -1,6 +1,6 @@
 # [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
 
-# generator-dotup-typescript
+# generator-dotup
 > Generator for typescript apps and libraries.
 >
 > With Gulp, Mocha, TS-Lint, typedoc, gh-pages, git and github.
@@ -9,11 +9,11 @@
 
 ## Installation
 
-First, install [Yeoman](http://yeoman.io) and generator-dotup-typescript using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
+First, install [Yeoman](http://yeoman.io) and generator-dotup using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
 
 ```bash
 npm install -g yo
-npm install -g generator-dotup-typescript
+npm install -g generator-dotup
 ```
 
 Then generate your new project:
@@ -34,11 +34,11 @@ yo dotup-typescript
 MIT © [Peter Ullrich](https://github.com/dotupNET/)
 
 
-[npm-image]: https://badge.fury.io/js/generator-dotup-typescript.svg
-[npm-url]: https://npmjs.org/package/generator-dotup-typescript
-[travis-image]: https://travis-ci.org/dotupNET/generator-dotup-typescript.svg?branch=master
-[travis-url]: https://travis-ci.org/dotupNET/generator-dotup-typescript
-[daviddm-image]: https://david-dm.org/dotupNET/generator-dotup-typescript.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/dotupNET/generator-dotup-typescript
-[coveralls-image]: https://coveralls.io/repos/dotupNET/generator-dotup-typescript/badge.svg
-[coveralls-url]: https://coveralls.io/r/dotupNET/generator-dotup-typescript
+[npm-image]: https://badge.fury.io/js/generator-dotup.svg
+[npm-url]: https://npmjs.org/package/generator-dotup
+[travis-image]: https://travis-ci.org/dotupNET/generator-dotup.svg?branch=master
+[travis-url]: https://travis-ci.org/dotupNET/generator-dotup
+[daviddm-image]: https://david-dm.org/dotupNET/generator-dotup.svg?theme=shields.io
+[daviddm-url]: https://david-dm.org/dotupNET/generator-dotup
+[coveralls-image]: https://coveralls.io/repos/dotupNET/generator-dotup/badge.svg
+[coveralls-url]: https://coveralls.io/r/dotupNET/generator-dotup

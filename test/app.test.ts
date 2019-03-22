@@ -5,7 +5,7 @@
 // import { ProjectQuestions, ProjectType } from '../src/app/ProjectGenerator';
 // const ProjectGenerator = require('../src/app/index');
 
-// describe('generator-dotup-typescript:app', () => {
+// describe('generator-dotup:app', () => {
 
 //   before(() => {
 //     const answers = {

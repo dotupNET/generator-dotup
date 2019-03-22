@@ -6,7 +6,7 @@
       "authorUrl": "https://github.com/dotupNET/"
     }
   },
-  "generator-dotup-typescript": {
+  "generator-dotup": {
     "promptValues": {
       "username": "pussy",
       "repositoryName": "ni",

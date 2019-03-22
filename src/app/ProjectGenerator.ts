@@ -2,7 +2,7 @@
 import { BaseGenerator, GeneratorOptions, InputQuestion, InquirerQuestionType, Question, StoreQuestion } from 'dotup-typescript-yeoman-generators';
 import inquirer = require('inquirer');
 import validateNpmPackageNameTyped from 'validate-npm-package-name-typed';
-import { GitQuestions } from 'generator-dotup-git'; // '../git/GitGenerator';
+import { GitQuestions } from 'generator-dotup-git/generators/app/GitQuestions'; // '../git/GitGenerator';
 import { TypescriptAppGenerator } from '../ts-app/TypescriptAppGenerator';
 import { TypescriptLibGenerator } from '../ts-lib/TypescriptLibGenerator';
 import { YeomanGeneratorGenerator } from '../ts-yogen/YeomanGeneratorGenerator';
@@ -149,6 +149,8 @@ export class ProjectGenerator extends BaseGenerator<ProjectQuestions> {
       //   Generator: (<any>GitGenerator),
       //   path: require.resolve('../git/index')
       // };
+
+      console.log(GitQuestions.rootPath);
 
       // Load git generator
       this.composeWith(
